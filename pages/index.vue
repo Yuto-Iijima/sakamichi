@@ -13,41 +13,50 @@
         <logo />
         <vuetify-logo />
       </div>
-      <v-card to="/test">
+      <v-card>
         <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
+          会津大学　坂道サークル
         </v-card-title>
         <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
+          <p>会津大学坂道サークルは2017年７月に出来た　乃木坂４６　欅坂46　日向坂４６好きのためのサークルです。</p>
+          <p> The Aizu University Sakamichi Circle is a circle for those who like Nogizaka 46, Keyakizaka 46, and Hyugazaka 46, which were created in July 2017.</p>
+          
+          <p>坂道サークルの主な活動内容はこちらから! Click here for the main activities of the slope circle!
+          <a 
+          href="/test"
+          > 
+          activate
+          </a>.
+          </p>
+          
+          <p>今月の予定はこちらから。
+            Click here for this month's schedule. <a
+              href="https://calendar.google.com/calendar/b/2?cid=YWl6dTQ2c2FrYW1pY2hpQGdtYWlsLmNvbQ"
               target="_blank"
             >
-              documentation
+              Calender
             </a>.
           </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
+          <p>乃木坂４６　欅坂４６　日向坂４６の情報はこちら。
+            Click here for sakamichi imformation. <a
+           href="/test"
             >
-              discord
+              Sakamichi imformation 
+             
             </a>.
           </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
+          <p>公式ツイッターはこちらから
+            Click here for oficial Twitter <a
+              href="https://twitter.com/aizu_sakamithi"
               target="_blank"
               title="contribute"
             >
-              issue board
+              Twitter
             </a>.
           </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
+          <p>興味がある方、合同飲み会希望の方はTwitterもしくはGmailでご連絡ください</p>
           <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+            <em><small>&mdash; 会津大学坂道サークル</small></em>
           </div>
           <hr class="my-3">
           <a

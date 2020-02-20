@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="mx-auto"
-    max-width="500"
+    max-width="350"
   >
     <v-toolbar color="#7D2982">
      <v-toolbar-title>乃木坂46</v-toolbar-title>
@@ -28,19 +28,7 @@
             </v-img>
 
             <v-card-actions>
-              <v-spacer></v-spacer>
-
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
+            
             </v-card-actions>
           </v-card>
         </v-col>

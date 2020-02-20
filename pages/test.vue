@@ -21,6 +21,7 @@
 import Keyaki from '~/pages/keyaki'
 import Nogi from '~/pages/nogi'
 import Hinata from '~/pages/hinata'
+import Calender from '~/pages/calender'
 
 export default {
     components: {

@@ -1,92 +1,54 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+   
 
     <v-app-bar
       :clipped-left="clipped"
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
+    
       
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
+   
+      
+      <v-btn to="/" class="ma-md-4">
       <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
       </v-btn>
+
+      <v-btn
+      class="ma-md-4"
+       @click.stop="clipped = !clipped"
+        href="/active">
+      Activate
+      </v-btn>
+      <v-btn
+      class="ma-md-4"
+       @click.stop="clipped = !clipped"
+        href="https://calendar.google.com/calendar/b/2?cid=YWl6dTQ2c2FrYW1pY2hpQGdtYWlsLmNvbQ"
+        target="_blank">
+      Calender
+      </v-btn>
+      <v-btn
+      class="ma-md-4"
+       @click.stop="clipped = !clipped"
+        href="/test">
+      Information
+      </v-btn>
+      <v-spacer />
+    
     </v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    
     
     <v-footer
       :fixed="fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>{{year}}/</span><span>{{month}}/</span><span>{{date}}</span>
     </v-footer>
 
   </v-app>
@@ -107,19 +69,23 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Activate',
+          to: '/active'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'saka',
+          title: 'saka imformation',
           to: '/test'
         }
       ],
+
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '会津大学坂道サークル',
+      year: new Date().getFullYear(),
+      month: new Date().getMonth() + 1,
+      date: new Date().getDate()
     }
   }
 }
