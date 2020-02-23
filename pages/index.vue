@@ -9,11 +9,25 @@
       sm8
       md6
     >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
+    <v-carousel
+     cycle
+    height="300"
+    hide-delimiter-background
+    show-arrows-on-hover
+    >
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+      reverse-transition="fade-transition"
+      transition="fade-transition"
+    ></v-carousel-item>
+ 
+  </v-carousel>
+  
+
       <v-card>
+       <v-content class="bg">
         <v-card-title class="headline">
           会津大学　坂道サークル
         </v-card-title>
@@ -60,42 +74,67 @@
           </div>
           <hr class="my-3">
           <a
-            href="https://nuxtjs.org/"
+            href="mailto:aizu46sakamichi&#64;gmail.com"
             target="_blank"
           >
-            Nuxt Documentation
+            aizu46sakamichi@gmail.com
           </a>
           <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
+          <div class="tweet"><a class="twitter-timeline" href="https://twitter.com/aizu_sakamithi?s=09" data-widget-id="699562346964918273" lang="ja" data-chrome="nofooter" height="392">@aizu_sakamithiさんのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+          </div>
+        </div>
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
+       
         </v-card-actions>
+         </v-content>
       </v-card>
     </v-flex>
   </v-layout>
+ </v-content>
 </template>
 
+<style>
+    .bg {
+        background-size: cover;
+        background-image: url("~@/assets/images/back_sakamichi.png");
+    }
+</style>
+
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import img1 from '~/assets/images/花見.jpg'
+import img2 from '~/assets/images/花見集合.jpg'
+import img3 from '~/assets/images/hinata_blog.jpeg'
+import img4 from '~/assets/images/チラシ.jpg'
+import img5 from '~/assets/images/握手会.jpg'
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
+    data () {
+      return {
+        items: [
+          {
+            src:img1,frex:12
+          },
+           {
+            src:img2,
+            height:300,
+            width:300,
+          },
+           {
+            src:img3,frex:12
+          },
+           {
+            src:img4,frex:12
+          },
+           {
+            src:img5,frex:12
+          },
+        ],
+      }
+    },
   }
-}
+  
+ 
 </script>
