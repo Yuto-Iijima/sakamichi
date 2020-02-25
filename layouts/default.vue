@@ -6,22 +6,25 @@
       :clipped-left="clipped"
       fixed
       app
+      color="#69F0AE"
     >
     
       
    
       
-      <v-btn to="/" class="ma-md-4">
+      <v-btn to="/" class="ma-md-4" color="#29B6F6">
       <v-toolbar-title v-text="title" />
       </v-btn>
 
       <v-btn
+      color="#7CC8E9"
       class="ma-md-4"
        @click.stop="clipped = !clipped"
         href="/active">
       Activate
       </v-btn>
       <v-btn
+       color="#00C853"
       class="ma-md-4"
        @click.stop="clipped = !clipped"
         href="https://calendar.google.com/calendar/b/2?cid=YWl6dTQ2c2FrYW1pY2hpQGdtYWlsLmNvbQ"
@@ -29,6 +32,7 @@
       Calender
       </v-btn>
       <v-btn
+       color="#9575CD"
       class="ma-md-4"
        @click.stop="clipped = !clipped"
         href="/test">

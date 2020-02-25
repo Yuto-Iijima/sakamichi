@@ -29,7 +29,7 @@
       <v-card>
        <v-content class="bg">
         <v-card-title class="headline">
-          会津大学　坂道サークル
+          <strong class="green--text text--lighten-2">会津大学　坂道サークル</strong>
         </v-card-title>
         <v-card-text>
           <p>会津大学坂道サークルは2017年７月に出来た　乃木坂４６　欅坂46　日向坂４６好きのためのサークルです。</p>
@@ -37,7 +37,7 @@
           
           <p>坂道サークルの主な活動内容はこちらから! Click here for the main activities of the slope circle!
           <a 
-          href="/test"
+          href="/active"
           > 
           activate
           </a>.
@@ -52,10 +52,10 @@
             </a>.
           </p>
           <p>乃木坂４６　欅坂４６　日向坂４６の情報はこちら。
-            Click here for sakamichi imformation. <a
+            Click here for sakamichi information. <a
            href="/test"
             >
-              Sakamichi imformation 
+              Sakamichi information 
              
             </a>.
           </p>
@@ -70,7 +70,7 @@
           </p>
           <p>興味がある方、合同飲み会希望の方はTwitterもしくはGmailでご連絡ください</p>
           <div class="text-xs-right">
-            <em><small>&mdash; 会津大学坂道サークル</small></em>
+            <em><small>&mdash;会津大学坂道サークル</small></em>
           </div>
           <hr class="my-3">
           <a
@@ -80,10 +80,17 @@
             aizu46sakamichi@gmail.com
           </a>
           <br>
-          <div class="tweet"><a class="twitter-timeline" href="https://twitter.com/aizu_sakamithi?s=09" data-widget-id="699562346964918273" lang="ja" data-chrome="nofooter" height="392">@aizu_sakamithiさんのツイート</a>
+           <v-row>
+           <v-layout justify-center>
+          <div class="tweet"><a class="twitter-timeline" href="https://twitter.com/aizu_sakamithi?s=09" data-widget-id="699562346964918273" lang="ja" data-chrome="nofooter" height="392"></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
           </div>
+          <a href="https://lin.ee/ah58gym"><img height="36" border="0" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
+          </v-layout>
+          </v-row>
+
         </div>
+        
         </v-card-text>
         <v-card-actions>
           <v-spacer />
@@ -106,9 +113,10 @@
 <script>
 import img1 from '~/assets/images/花見.jpg'
 import img2 from '~/assets/images/花見集合.jpg'
-import img3 from '~/assets/images/hinata_blog.jpeg'
-import img4 from '~/assets/images/チラシ.jpg'
+import img3 from '~/assets/images/ライブ１.jpeg'
+import img4 from '~/assets/images/アンビ.jpg'
 import img5 from '~/assets/images/握手会.jpg'
+import img6 from '~/assets/images/QR_saka.png'
 
 export default {
     data () {
@@ -132,6 +140,7 @@ export default {
             src:img5,frex:12
           },
         ],
+        QR_img:{src:img6},
       }
     },
   }

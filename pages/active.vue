@@ -1,90 +1,34 @@
 <template>
-<div class="sect02">
-          <div class="news">
-            <div class="box-bdr">
-              <div class="headerarea">
-                <h2>
-                  NEWS
-                </h2>
-                <p class="btn-list">
-                  <a href="/s/k46o/news/list?ima=0000&dy=202002">一覧を見る</a>
-                </p>
-              </div>
-
-<ul><li>
-                  <time>2020.02.16</time>
-                  <div class="category other">
-                    その他
-                  </div>
-                  <span><a href="/s/k46o/news/detail/S00392?ima=0000"> 坂道研修生より、遠藤光莉、大園玲、大沼晶保、幸阪茉里乃、増本綺良、守屋麗奈の配属が決定!</a></span>
-                </li><li>
-                  <time>2020.02.15</time>
-                  <div class="category other">
-                    その他
-                  </div>
-                  <span><a href="/s/k46o/news/detail/O00186?ima=0000"> 2月16日(日) 20時より「坂道研修生 配属発表 SHOWROOM」の配信が決定!!</a></span>
-                </li><li>
-                  <time>2020.02.15</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01560?ima=0000"> 2月17日(月)25:29～NIB長崎国際テレビ「AIR」に尾関梨香、小池美波、井上梨名、武元唯衣がコメント出演!!</a></span>
-                </li><li>
-                  <time>2020.02.14</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01581?ima=0000"> 2月14日(金)公開の「INTERNET TVガイド」に小林由依が登場!</a></span>
-                </li><li>
-                  <time>2020.02.13</time>
-                  <div class="category event">
-                    イベント情報
-                  </div>
-                  <span><a href="/s/k46o/news/detail/E00460?ima=0000"> 2020年2月29日(土)「第30回東京ガールズコレクション2020　SPRING/SUMMER」 に小林由依のモデル出演が決定!</a></span>
-                </li><li>
-                  <time>2020.02.12</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01580?ima=0000"> 2月12日(水)19:00～テレビ朝日「あいつ今何してる?&そこの〇〇止まりなさい!合体スペシャル」に土生瑞穂が出演!!</a></span>
-                </li><li>
-                  <time>2020.02.11</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01561?ima=0000"> 2月13日(木)25:23～NCC長崎文化放送「JUNK BOX」に尾関梨香、小池美波、井上梨名、武元唯衣がコメント出演!!</a></span>
-                </li><li>
-                  <time>2020.02.06</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01569?ima=0000"> 2月8日(土)24:55～ 福島中央テレビ「二畳半レコード」に尾関梨香、小池美波、井上梨名、武元唯衣がコメント出演!!</a></span>
-                </li><li>
-                  <time>2020.02.03</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01579?ima=0000"> 2月5日(水)20:00～　テレビ朝日「くりぃむクイズミラクル9」に原田葵が出演!</a></span>
-                </li><li>
-                  <time>2020.02.03</time>
-                  <div class="category media">
-                    メディア
-                  </div>
-                  <span><a href="/s/k46o/news/detail/M01576?ima=0000"> 2月5日(水)19:00～テレビ朝日「あいつ今何してる?」に尾関梨香が出演!!</a></span>
-                </li></ul>
-
-            </div>
-          </div>
-
-<style>
-.sect02 .topics1{
-top: 0;
-}
-.sect02 .topics1 span.ribbon{
-top: 18px;
-    left: -26px;
-}
-</style>
-</div>
+<v-card>
+<v-card-title class="headline">
+          主な活動
+        </v-card-title>
+　     <v-card-text>
+       飲み会、握手会への参加、ライブへの参加など！
+　      </v-card-text>
+ <v-card-title class="headline">
+          活動履歴
+        </v-card-title>
+        <v-card-text>
+        <time>2017.7.15</time>
+        <p>坂道サークル設立。設立初期メンバーはサークル長、副サークル長、会計２人、人数合わせの５人でした！</p>
+　      <time>2018.4.12</time>
+        <p>坂道サークル公式ライン配信。スタートページのQRコードから</p>
+         <time>2018.4.20</time>
+        <p>新メンバーおもてなし会。大学の北ラウンジで開催。お菓子やドリンクを広げ楽しみました。</p>
+         <time>2018.4.29</time>
+        <p>初飲み会。ホルモン道場で焼肉しながら楽しみました。二次会はカラオケに！</p>
+         <time>2018.10.15,16</time>
+        <p>学園祭。模擬店を出店。わたあめを販売するも赤字。でも坂道サークルに興味を持ってくれる方がたくさんいました！</p>
+         <time>2018.10.~</time>
+        <p>学園祭打ち上げ。赤字だったので全員自腹でしたが美味しいビールが飲めました。</p>
+         <time>2018.12.15</time>
+        <p>坂道サークルクリスマス運動会。短大の体育館を借りて球技大会を行いました。打ち上げでは有希の茶屋に。</p>
+         <time>2019.4.14</time>
+        <p>坂道サークル花見。鶴ヶ城で花見を行いました。前日に場所取りをしたのに当日場所無くなっている事件もありましたが新入生も来てくれ盛り上がりました。</p>
+         <time>2019.10.12,13</time>
+        <p>学園祭台風のため中止。３万円分のチュロスを購入したのに台風で中止になり無駄となった。。サークル員で出費を分散し食べました。</p>
+        </v-card-text>
+</v-card>
 
 </template>
